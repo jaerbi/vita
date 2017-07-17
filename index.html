@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/bootstrap-carousel.min.css">
 	<link rel="stylesheet" href="css/bundle.min.css">
 </head>
 <body>
@@ -21,16 +22,16 @@
 				<nav>
 					<ul class="header__top-list">
 						<li class="header__top-item">
-							<a href="#">About<span class="nav_border"></span></a>
+							<a href="#about" class="smooth">About<span class="nav_border"></span></a>
 						</li>
 						<li class="header__top-item">
-							<a href="#">Portfolio<span class="nav_border"></span></a>
+							<a href="#portfolio" class="smooth">Portfolio<span class="nav_border"></span></a>
 						</li>
 						<li class="header__top-item">
-							<a href="#">Services<span class="nav_border"></span></a>
+							<a href="#process" class="smooth">Services<span class="nav_border"></span></a>
 						</li>
 						<li class="header__top-item">
-							<a href="#">Contact<span class="nav_border"></span></a>
+							<a href="#contact" class="smooth">Contact<span class="nav_border"></span></a>
 						</li>
 					</ul>
 				</nav>
@@ -48,7 +49,7 @@
 					<a href="#">I want clients</a>
 				</div>
 				<div class="header__content-arrow">
-					<a href="#" class="arrow_down">
+					<a href="#main" class="arrow_down smooth">
 						<img src="images/icon/arrow-below.svg" alt="arrow below">
 					</a>
 				</div>
@@ -56,9 +57,10 @@
 		</div>
 	</header>
 	<!-- END__ HEADER -->
+	<div class="scroll-up"></div>
 	<!-- BEGIN__ MAIN -->
-	<main>
-		<section class="about">
+	<main id="main">
+		<section id="about" class="about">
 			<div class="about__text">
 				<h2>What can <span>you receive?</span></h2>
 				<p>Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh vul-<br>putate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
@@ -96,12 +98,12 @@
 				</ul>
 			</div>
 			<div class="arrow__down">
-				<a href="#">
+				<a href="#join" class="smooth">
 					<img src="images/icon/arrow-below.svg" alt="arrow down">
 				</a>
 			</div>
 		</section>
-		<section class="join">
+		<section id="join" class="join">
 			<div class="join__wrap">
 				<div class="join__title">
 					<h4><span>Expand</span> your business</h4>
@@ -111,36 +113,36 @@
 				</div>
 			</div>
 			<div class="join__arrow">
-				<a href="#" class="arrow_down">
+				<a href="#process" class="arrow_down smooth">
 					<img src="images/icon/arrow-below.svg" alt="arrow below">
 				</a>
 			</div>
 		</section>
-		<section class="process">
+		<section id="process" class="process">
 			<div class="process__text">
 				<h2>Our <span>process</span></h2>
 				<p>Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh vul-<br>putate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 			</div>
 			<div class="process__content">
 				<ul>
-					<li class="item-1 item">
+					<li class="item-1 process-item">
 						<span class="icon_step-1"></span>
 						<h5>Step <span>1</span></h5>
 						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
 					</li>
-					<li class="item-2 item">
+					<li class="item-2 process-item">
 					</li>
-					<li class="item-3 item">
+					<li class="item-3 process-item">
 						<span class="icon_step-3"></span>
 						<h5>Step <span>2</span></h5>
 						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida</p>
 					</li>
-					<li class="item-4 item">
+					<li class="item-4 process-item">
 						<span class="icon_step-4"></span>
 						<h5>Step <span>3</span></h5>
 						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida </p>
 					</li>
-					<li class="item-5 item">
+					<li class="item-5 process-item">
 						<span class="icon_step-5"></span>
 						<span class="icon_step-6"></span>
 						<h5>Step <span>4</span></h5>
@@ -149,12 +151,12 @@
 				</ul>
 			</div>
 			<div class="arrow__down">
-				<a href="#">
+				<a href="#wedo" class="smooth">
 					<img src="images/icon/arrow-below.svg" alt="arrow down">
 				</a>
 			</div>
 		</section>
-		<section class="wedo">
+		<section id="wedo" class="wedo">
 			<div class="wedo__title">
 				<h2>What do <span>we do?</span></h2>
 			</div>
@@ -172,16 +174,16 @@
 					</div>
 				</div>
 				<div class="arrow__down">
-					<a href="#">
+					<a href="#advertising" class="smooth">
 						<img src="images/icon/arrow-below.svg" alt="arrow down">
 					</a>
 				</div>
 			</div>
-			<div class="advertising">
+			<div id="advertising" class="advertising">
 				<div class="advertising__wrap">
 					<div class="wedo__advertising">
 						<div>
-							<img src="images/marketing-img.png" alt="advertising image">
+							<img src="images/adver-img.png" alt="advertising image">
 						</div>
 						<div class="wedo__advertising-content">
 							<p class="wedo__advertising-title">advertising</p>
@@ -192,13 +194,13 @@
 						</div>
 					</div>
 					<div class="arrow__down">
-						<a href="#">
+						<a href="#marketing" class="smooth">
 							<img src="images/icon/arrow-below.svg" alt="arrow down">
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="marketing__wrap">
+			<div id="marketing" class="marketing__wrap">
 				<div class="wedo__marketing">
 					<div class="wedo__marketing-content">
 						<p class="wedo__marketing-title">marketing kit</p>
@@ -212,73 +214,73 @@
 					</div>
 				</div>
 				<div class="arrow__down">
-					<a href="#">
+					<a href="#portfolio" class="smooth">
 						<img src="images/icon/arrow-below.svg" alt="arrow down">
 					</a>
 				</div>
 			</div>
 		</section>
-		<section class="portfolio">
+		<section id="portfolio" class="portfolio">
 			<div class="portfolio__wrap">
-					<div class="portfolio__title">
-						<h2>Portfolio</h2>
-					</div>
-					<nav class="portfolio__menu">
-						<ul class="portfolio__menu-list">
-							<li class="portfolio__menu-item">
-								<a href="#">all</a>
-							</li>
-							<li class="portfolio__menu-item">
-								<a href="#">Entertainment</a>
-							</li>
-							<li class="portfolio__menu-item">
-								<a href="#">sport</a>
-							</li>
-							<li class="portfolio__menu-item">
-								<a href="#">business</a>
-							</li>
-							<li class="portfolio__menu-item">
-								<a href="#">building</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="portfolio__images">
-						<div class="portfolio__images-row1">
-							<div class="portfolio_item p_item-1">
-								<img src="images/portfolio_img-1.jpg" alt="mountin">
-							</div>
-							<div class="portfolio_item p_item-2">
-								<img src="images/portfolio_img-2.jpg" alt="helmet">
-							</div>
-							<div class="portfolio_item p_item-3">
-								<img src="images/portfolio_img-3.jpg" alt="buss">
-							</div>
+				<div class="portfolio__title">
+					<h2>Portfolio</h2>
+				</div>
+				<nav class="portfolio__menu">
+					<ul class="portfolio__menu-list">
+						<li class="portfolio__menu-item">
+							<a href="#">all</a>
+						</li>
+						<li class="portfolio__menu-item">
+							<a href="#">Entertainment</a>
+						</li>
+						<li class="portfolio__menu-item">
+							<a href="#">sport</a>
+						</li>
+						<li class="portfolio__menu-item">
+							<a href="#">business</a>
+						</li>
+						<li class="portfolio__menu-item">
+							<a href="#">building</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="portfolio__images">
+					<div class="portfolio__images-row1">
+						<div class="portfolio_item p_item-1">
+							<img src="images/portfolio_img-1.jpg" alt="mountin">
 						</div>
-						<div class="portfolio__images-row2">
-							<div class="portfolio_item p_item-2">
-								<img src="images/portfolio_img-2.jpg" alt="helmet">
-							</div>
-							<div class="portfolio_item p_item-3">
-								<img src="images/portfolio_img-3.jpg" alt="buss">
-							</div>
-							<div class="portfolio_item p_item-1">
-								<img src="images/portfolio_img-1.jpg" alt="mountin">
-							</div>
+						<div class="portfolio_item p_item-2">
+							<img src="images/portfolio_img-2.jpg" alt="helmet">
+						</div>
+						<div class="portfolio_item p_item-3">
+							<img src="images/portfolio_img-3.jpg" alt="buss">
 						</div>
 					</div>
-					<div class="portfolio_button">
-						<a href="#">I want landing page</a>
-					</div>
-					<div class="portfolio_arrow">
-						<div class="arrow__down">
-							<a href="#">
-								<img src="images/icon/arrow-below.svg" alt="arrow down">
-							</a>
+					<div class="portfolio__images-row2">
+						<div class="portfolio_item p_item-2">
+							<img src="images/portfolio_img-2.jpg" alt="helmet">
+						</div>
+						<div class="portfolio_item p_item-3">
+							<img src="images/portfolio_img-3.jpg" alt="buss">
+						</div>
+						<div class="portfolio_item p_item-1">
+							<img src="images/portfolio_img-1.jpg" alt="mountin">
 						</div>
 					</div>
+				</div>
+				<div class="portfolio_button">
+					<a href="#">I want landing page</a>
+				</div>
+				<div class="portfolio_arrow">
+					<div class="arrow__down">
+						<a href="#contact" class="smooth">
+							<img src="images/icon/arrow-below.svg" alt="arrow down">
+						</a>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="team">
+		<section id="contact" class="team">
 			<div class="team__wrap">
 				<div class="team__title">
 					<h2>our <span>team</span></h2>
@@ -323,15 +325,112 @@
 				</div>
 				<div class="portfolio_arrow">
 					<div class="arrow__down">
-						<a href="#">
+						<a href="#comment" class="smooth">
 							<img src="images/icon/arrow-below.svg" alt="arrow down">
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section id="comment" class="comment">
+			<div class="comment__wrap">
+				<div class="comment-icon">
+					<img src="images/icon/icon_comment.png" alt="icon comment">
+				</div>
+				<div id="myCarousel" class="carousel" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="comment__carousel">
+								<p class="comment__carousel-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conse
+								</p>
+								<div class="comment__carousel-photo">
+									<img src="images/comment_photo.png" alt="portret comment">
+								</div>
+								<div class="comment__carousel-name">
+									<h2><span>Alan</span> Richman</h2>
+									<p>CEO of Romashka</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="comment__carousel">
+								<p class="comment__carousel-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conse nisi elit conse
+								</p>
+								<div class="comment__carousel-photo">
+									<img src="images/author-3.png" alt="portret comment">
+								</div>
+								<div class="comment__carousel-name">
+									<h2><span>Nil</span> Rich</h2>
+									<p>Romashka IO</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="comment__carousel">
+								<p class="comment__carousel-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+								</p>
+								<div class="comment__carousel-photo">
+									<img src="images/author-1.png" alt="portret comment">
+								</div>
+								<div class="comment__carousel-name">
+									<h2><span>Bla</span> Blsa</h2>
+									<p>Marketing</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="location">
+			<div class="location__image">
+				<img src="images/location_img.png" alt="location">
+			</div>
+			<div class="location__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41843.44001985491!2d24.32698866717433!3d49.04453546255506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730a26f2bcfe125%3A0xc53a73142c0b220c!2z0JrQsNC70YPRiCwg0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1500285673957"  frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
 	</main>
 	<!-- END__ MAIN -->
-
+	<!-- BEGIN__ footer -->
+	<footer class="footer">
+		<div class="footer__wrap">
+			<div class="footer__logo">
+				<p>ViTa</p>
+			</div>
+		</div>
+	</footer>
+	<!-- END__ footer -->
+	
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+	<script src="js/bootstrap-carousel.min.js"></script>
+	<script src="js/go-up.js"></script>
+	<script src="js/smooth-scroll.js"></script>
 </body>
 </html>
